@@ -17,7 +17,10 @@ const Index = () => {
       <footer className="bg-primary text-primary-foreground py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm">
-            © 2025 MM Kitchen Equipment. All rights reserved.
+            © 2025 M.M. Kitchen Equipments. All rights reserved.
+          </p>
+          <p className="text-xs mt-2 opacity-80">
+            Unbeatable Since 1950 • ISO 9001:2015 Certified
           </p>
         </div>
       </footer>

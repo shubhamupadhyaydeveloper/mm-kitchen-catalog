@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 const Contact = () => {
   const phoneNumber = "+1234567890"; // Replace with actual number
-  const email = "info@mmkitchen.com"; // Replace with actual email
+  const email = "mmkitchenequipments@gmail.com";
 
   return (
     <section className="py-20 gradient-hero">

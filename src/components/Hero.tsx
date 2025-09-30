@@ -19,10 +19,13 @@ const Hero = () => {
       <div className="container mx-auto px-4 z-10 relative">
         <div className="max-w-3xl">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-primary-foreground">
-            MM Kitchen Equipment
+            M.M. Kitchen Equipments
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90">
-            Premium Commercial Kitchen Solutions for Professional Culinary Excellence
+          <p className="text-xl md:text-2xl mb-4 text-primary-foreground/90">
+            Professional Commercial Kitchen Equipment
+          </p>
+          <p className="text-lg md:text-xl mb-8 text-accent font-semibold">
+            Unbeatable Since 1950 • ISO 9001:2015 Certified
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button 

@@ -10,7 +10,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <h1 className="text-xl md:text-2xl font-bold gradient-accent bg-clip-text text-transparent">
-              MM Kitchen Equipment
+              M.M. Kitchen Equipments
             </h1>
           </div>
 
