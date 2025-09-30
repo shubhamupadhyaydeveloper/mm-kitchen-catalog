@@ -26,6 +26,16 @@ const Header = () => {
               Home
             </a>
             <a 
+              href="#about" 
+              className="text-sm font-medium hover:text-accent transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              About
+            </a>
+            <a 
               href="#catalog" 
               className="text-sm font-medium hover:text-accent transition-colors"
               onClick={(e) => {
