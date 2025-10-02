@@ -17,271 +17,394 @@ export const categories = [
   "All Products",
   "Commercial Kitchen Equipment",
   "Canteen Equipment",
-  "Food Preparation & Juicers",
-  "Tandoors",
-  "Food Service & Display",
-  "Bakery Equipment",
-  "Combi Ovens, Microwaves & Induction",
-  "Showcases & Dispensers",
+  "Tandoor",
+  "Food Preparation Equipment & Juicers",
+  "Food Service & Bain Marie",
+  "Cake Showcases & Display Cabinets",
   "Professional Coffee Machines",
-  "Refrigeration Equipment",
-  "Bar Refrigeration",
-  "Ice Makers & Flakers",
-  "Catering & Countertop Equipment",
-  "Washing & Utility",
-  "Tables, Cabinets & Racks",
-  "Trolleys & Carts",
-  "Exhaust & Gas Systems"
+  "Professional Refrigeration Equipment",
+  "Catering Equipment",
+  "Dishwasher Laundry & Extractor",
+  "Washing Equipment"
 ];
 
 export const products: Product[] = [
   // Commercial Kitchen Equipment
-  { id: 1, title: "Stock Pot Range", description: "Professional stock pot cooking range", image: productOven, category: "Commercial Kitchen Equipment" },
-  { id: 2, title: "2-Burner Cooking Range", description: "Compact 2-burner commercial cooking range", image: productOven, category: "Commercial Kitchen Equipment" },
-  { id: 3, title: "3-Burner Cooking Range", description: "Heavy-duty 3-burner cooking range", image: productOven, category: "Commercial Kitchen Equipment" },
-  { id: 4, title: "2-Burner Continental Range", description: "Continental style 2-burner range", image: productOven, category: "Commercial Kitchen Equipment" },
-  { id: 5, title: "4-Burner Continental Range", description: "Large capacity 4-burner continental range", image: productOven, category: "Commercial Kitchen Equipment" },
-  { id: 6, title: "Chinese Wok Range - 1 Burner", description: "Single burner Chinese wok range", image: productOven, category: "Commercial Kitchen Equipment" },
-  { id: 7, title: "Chinese Wok Range - 2 Burner", description: "Dual burner Chinese wok range", image: productOven, category: "Commercial Kitchen Equipment" },
-  { id: 8, title: "Chinese Wok Range - 2 Burner + 1 Stock Pot", description: "Combined wok and stock pot range", image: productOven, category: "Commercial Kitchen Equipment" },
-  { id: 9, title: "Single Induction Range", description: "Energy-efficient induction cooking range", image: productOven, category: "Commercial Kitchen Equipment" },
-  { id: 10, title: "Double Electric Range", description: "Dual electric cooking range", image: productOven, category: "Commercial Kitchen Equipment" },
-  { id: 11, title: "Chapatti Plate with Puffer", description: "Complete chapatti making system", image: productOven, category: "Commercial Kitchen Equipment" },
-  { id: 12, title: "Chapatti Plate", description: "Professional chapatti cooking plate", image: productOven, category: "Commercial Kitchen Equipment" },
-  { id: 13, title: "Chapatti Puffer", description: "Automatic chapatti puffing machine", image: productOven, category: "Commercial Kitchen Equipment" },
-  { id: 14, title: "Dosa Plate", description: "Commercial dosa griddle plate", image: productOven, category: "Commercial Kitchen Equipment" },
-  { id: 15, title: "Hot Plate cum Griddle Plate", description: "Multi-purpose hot plate and griddle", image: productOven, category: "Commercial Kitchen Equipment" },
-  { id: 16, title: "Double Deep Fat Fryer", description: "High-capacity double basket fryer", image: productFryer, category: "Commercial Kitchen Equipment" },
-  { id: 17, title: "Broaster Pressure Fryer", description: "Pressure frying system for crispy results", image: productFryer, category: "Commercial Kitchen Equipment" },
-  { id: 18, title: "Frymaster Fryers", description: "Premium Frymaster commercial fryers", image: productFryer, category: "Commercial Kitchen Equipment" },
-  { id: 19, title: "Dean Fryers", description: "Professional Dean brand fryers", image: productFryer, category: "Commercial Kitchen Equipment" },
-
+  {
+    id: 1,
+    title: "Chinese Range 1 Burner",
+    description: "Single burner Chinese wok range for professional kitchens",
+    category: "Commercial Kitchen Equipment",
+    image: productOven
+  },
+  {
+    id: 2,
+    title: "Chinese Range 2 Burner",
+    description: "Double burner Chinese wok range for high-volume cooking",
+    category: "Commercial Kitchen Equipment",
+    image: productOven
+  },
+  {
+    id: 3,
+    title: "Chinese Range (2B + ISP)",
+    description: "2 Burner Chinese range with integrated stock pot",
+    category: "Commercial Kitchen Equipment",
+    image: productOven
+  },
+  
   // Canteen Equipment
-  { id: 20, title: "Rice Boiler / Bulk Boiler", description: "Large capacity rice and bulk boiling system", image: productOven, category: "Canteen Equipment" },
-  { id: 21, title: "Standard Rice Boiler", description: "Standard commercial rice boiler", image: productOven, category: "Canteen Equipment" },
-  { id: 22, title: "Tilting Boiler - Deluxe", description: "Deluxe tilting boiler for easy pouring", image: productOven, category: "Canteen Equipment" },
-  { id: 23, title: "Tilting Boiler - Electrolux", description: "Premium Electrolux tilting boiler", image: productOven, category: "Canteen Equipment" },
-  { id: 24, title: "Tilting Brat Pan - Standard", description: "Standard tilting brat pan", image: productOven, category: "Canteen Equipment" },
-  { id: 25, title: "Tilting Brat Pan - Deluxe", description: "Deluxe tilting brat pan with enhanced features", image: productOven, category: "Canteen Equipment" },
-  { id: 26, title: "Tilting Brat Pan - Electrolux", description: "Premium Electrolux tilting brat pan", image: productOven, category: "Canteen Equipment" },
-  { id: 27, title: "Sigree / Frying Pan", description: "Traditional sigree frying pan", image: productOven, category: "Canteen Equipment" },
-  { id: 28, title: "Tilting Frying Pan", description: "Heavy-duty tilting frying pan", image: productOven, category: "Canteen Equipment" },
-  { id: 29, title: "Idly Plant - 120 Capacity", description: "120 idly capacity steaming plant", image: productOven, category: "Canteen Equipment" },
-  { id: 30, title: "Idly Plant - 240 Capacity", description: "240 idly capacity steaming plant", image: productOven, category: "Canteen Equipment" },
-  { id: 31, title: "Idly Plant - 300 Capacity", description: "300 idly capacity steaming plant", image: productOven, category: "Canteen Equipment" },
-  { id: 32, title: "Steam Generator", description: "High-capacity commercial steam generator", image: productOven, category: "Canteen Equipment" },
-  { id: 33, title: "Steam Jacketed Vessel", description: "Jacketed vessel for uniform heating", image: productOven, category: "Canteen Equipment" },
-  { id: 34, title: "Steam Cooking Plant", description: "Complete steam cooking system", image: productOven, category: "Canteen Equipment" },
-
-  // Food Preparation & Juicers
-  { id: 35, title: "Gravy Machine", description: "Automated gravy preparation machine", image: productMixer, category: "Food Preparation & Juicers" },
-  { id: 36, title: "Wet/Dry Pulverizer", description: "Multi-purpose wet and dry pulverizer", image: productMixer, category: "Food Preparation & Juicers" },
-  { id: 37, title: "Vegetable Cutter", description: "Professional vegetable cutting machine", image: productPrepTable, category: "Food Preparation & Juicers" },
-  { id: 38, title: "Vegetable Chopper", description: "Heavy-duty vegetable chopper", image: productPrepTable, category: "Food Preparation & Juicers" },
-  { id: 39, title: "Food Processor", description: "Commercial food processing machine", image: productMixer, category: "Food Preparation & Juicers" },
-  { id: 40, title: "Bowl Cutter", description: "Industrial bowl cutting machine", image: productMixer, category: "Food Preparation & Juicers" },
-  { id: 41, title: "Potato Peeler - Standard", description: "Standard commercial potato peeler", image: productPrepTable, category: "Food Preparation & Juicers" },
-  { id: 42, title: "Potato Peeler - Floor Model", description: "Heavy-duty floor model potato peeler", image: productPrepTable, category: "Food Preparation & Juicers" },
-  { id: 43, title: "Potato Chips Slicer", description: "Professional potato chips slicing machine", image: productPrepTable, category: "Food Preparation & Juicers" },
-  { id: 44, title: "Wet Grinder - Standard", description: "Standard commercial wet grinder", image: productMixer, category: "Food Preparation & Juicers" },
-  { id: 45, title: "Wet Grinder - Tilting Model", description: "Tilting wet grinder for easy operation", image: productMixer, category: "Food Preparation & Juicers" },
-  { id: 46, title: "Chicken Cutter", description: "Professional chicken cutting machine", image: productPrepTable, category: "Food Preparation & Juicers" },
-  { id: 47, title: "Meat Mincer", description: "Heavy-duty meat mincing machine", image: productMixer, category: "Food Preparation & Juicers" },
-  { id: 48, title: "Meat Slicer", description: "Precision meat slicing machine", image: productPrepTable, category: "Food Preparation & Juicers" },
-  { id: 49, title: "Bone Saw", description: "Industrial bone cutting saw", image: productPrepTable, category: "Food Preparation & Juicers" },
-  { id: 50, title: "Citrus Juicer", description: "Commercial citrus juicing machine", image: productMixer, category: "Food Preparation & Juicers" },
-  { id: 51, title: "Slow Press Juicer", description: "Cold press slow juicer for maximum nutrition", image: productMixer, category: "Food Preparation & Juicers" },
-  { id: 52, title: "Professional Juicer", description: "High-capacity professional juicer", image: productMixer, category: "Food Preparation & Juicers" },
-  { id: 53, title: "Juice Extractor", description: "Commercial juice extraction machine", image: productMixer, category: "Food Preparation & Juicers" },
-
-  // Tandoors
-  { id: 54, title: "Metallic Gas Tandoor", description: "Durable metallic gas-fired tandoor", image: productOven, category: "Tandoors" },
-  { id: 55, title: "Gas/Charcoal Tandoor", description: "Dual fuel gas and charcoal tandoor", image: productOven, category: "Tandoors" },
-  { id: 56, title: "Drum Tandoor", description: "Traditional drum style tandoor", image: productOven, category: "Tandoors" },
-  { id: 57, title: "Copper Tandoor", description: "Premium copper tandoor with superior heat retention", image: productOven, category: "Tandoors" },
-  { id: 58, title: "Brick Tandoor", description: "Authentic clay brick tandoor", image: productOven, category: "Tandoors" },
-
-  // Food Service & Display
-  { id: 59, title: "Roll / Chapati Counter", description: "Specialized counter for roll and chapati service", image: productPrepTable, category: "Food Service & Display" },
-  { id: 60, title: "Chef Counter", description: "Professional chef service counter", image: productPrepTable, category: "Food Service & Display" },
-  { id: 61, title: "Plate Warmer", description: "Commercial plate warming cabinet", image: productOven, category: "Food Service & Display" },
-  { id: 62, title: "Biriyani Handi Warmer", description: "Traditional handi warming unit", image: productOven, category: "Food Service & Display" },
-  { id: 63, title: "Bain Marie Display Counter", description: "Hot food display with bain marie", image: productPrepTable, category: "Food Service & Display" },
-  { id: 64, title: "Bain Marie with Shelves", description: "Bain marie unit with storage shelves", image: productPrepTable, category: "Food Service & Display" },
-  { id: 65, title: "Bain Marie with Cover", description: "Covered bain marie for heat retention", image: productPrepTable, category: "Food Service & Display" },
-  { id: 66, title: "Bain Marie with Tray Slides", description: "Bain marie with convenient tray slides", image: productPrepTable, category: "Food Service & Display" },
-  { id: 67, title: "Bain Marie with Round Vessels", description: "Bain marie designed for round vessels", image: productPrepTable, category: "Food Service & Display" },
-
-  // Bakery Equipment
-  { id: 68, title: "OTG Baking Oven", description: "Oven toaster griller for baking", image: productOven, category: "Bakery Equipment" },
-  { id: 69, title: "Baking Oven POV 1", description: "Single deck professional baking oven", image: productOven, category: "Bakery Equipment" },
-  { id: 70, title: "Baking Oven POV 2", description: "Double deck professional baking oven", image: productOven, category: "Bakery Equipment" },
-  { id: 71, title: "Baking Oven POV 3", description: "Triple deck professional baking oven", image: productOven, category: "Bakery Equipment" },
-  { id: 72, title: "Stone Base Pizza Oven - Single Deck", description: "Authentic stone base pizza oven", image: productOven, category: "Bakery Equipment" },
-  { id: 73, title: "Stone Base Pizza Oven - Double Deck", description: "Double deck stone base pizza oven", image: productOven, category: "Bakery Equipment" },
-  { id: 74, title: "Deck Oven - Standard", description: "Standard commercial deck oven", image: productOven, category: "Bakery Equipment" },
-  { id: 75, title: "Deck Oven - Deluxe", description: "Deluxe deck oven with premium features", image: productOven, category: "Bakery Equipment" },
-  { id: 76, title: "Deck Oven - Imported", description: "Premium imported deck oven", image: productOven, category: "Bakery Equipment" },
-  { id: 77, title: "Electric Deck Oven", description: "Electric powered deck oven", image: productOven, category: "Bakery Equipment" },
-  { id: 78, title: "Electric Convection Oven", description: "Convection oven for uniform baking", image: productOven, category: "Bakery Equipment" },
-  { id: 79, title: "Planetary Mixer", description: "Heavy-duty planetary dough mixer", image: productMixer, category: "Bakery Equipment" },
-  { id: 80, title: "Kitchen Aid Mixer", description: "Professional KitchenAid stand mixer", image: productMixer, category: "Bakery Equipment" },
-  { id: 81, title: "Dough Kneader", description: "Commercial dough kneading machine", image: productMixer, category: "Bakery Equipment" },
-  { id: 82, title: "Spiral Mixer", description: "Professional spiral dough mixer", image: productMixer, category: "Bakery Equipment" },
-  { id: 83, title: "Bread Slicer", description: "Automatic bread slicing machine", image: productPrepTable, category: "Bakery Equipment" },
-  { id: 84, title: "Dough Sheeter - Table Top", description: "Compact table top dough sheeter", image: productPrepTable, category: "Bakery Equipment" },
-  { id: 85, title: "Proofing Chamber", description: "Climate-controlled dough proofing chamber", image: productOven, category: "Bakery Equipment" },
-
-  // Combi Ovens, Microwaves & Induction
-  { id: 86, title: "Combi Oven - Rational", description: "Premium Rational combi oven", image: productOven, category: "Combi Ovens, Microwaves & Induction" },
-  { id: 87, title: "Combi Oven - Houno", description: "Professional Houno combi oven", image: productOven, category: "Combi Ovens, Microwaves & Induction" },
-  { id: 88, title: "Combi Oven - Prego", description: "Prego combi steamer oven", image: productOven, category: "Combi Ovens, Microwaves & Induction" },
-  { id: 89, title: "Combi Oven - Electrolux", description: "Electrolux professional combi oven", image: productOven, category: "Combi Ovens, Microwaves & Induction" },
-  { id: 90, title: "Self Cooking Centre", description: "Intelligent self-cooking oven system", image: productOven, category: "Combi Ovens, Microwaves & Induction" },
-  { id: 91, title: "Turbochef Speed Oven", description: "High-speed Turbochef cooking oven", image: productOven, category: "Combi Ovens, Microwaves & Induction" },
-  { id: 92, title: "Conveyor Pizza Oven", description: "Continuous conveyor pizza oven", image: productOven, category: "Combi Ovens, Microwaves & Induction" },
-  { id: 93, title: "Middleby Marshall Oven", description: "Premium Middleby Marshall conveyor oven", image: productOven, category: "Combi Ovens, Microwaves & Induction" },
-  { id: 94, title: "Menumaster Microwave Oven", description: "Commercial Menumaster microwave", image: productOven, category: "Combi Ovens, Microwaves & Induction" },
-  { id: 95, title: "Induction Cooktop - Flat Top", description: "Flat top induction cooking surface", image: productOven, category: "Combi Ovens, Microwaves & Induction" },
-  { id: 96, title: "Induction Cooktop - Wok Type", description: "Wok-style induction cooktop", image: productOven, category: "Combi Ovens, Microwaves & Induction" },
-  { id: 97, title: "Induction Plate", description: "Single induction cooking plate", image: productOven, category: "Combi Ovens, Microwaves & Induction" },
-
-  // Showcases & Dispensers
-  { id: 98, title: "Cake Display Cabinet", description: "Refrigerated cake display showcase", image: productRefrigerator, category: "Showcases & Dispensers" },
-  { id: 99, title: "Cold Showcase - Curved Glass", description: "Premium curved glass cold showcase", image: productRefrigerator, category: "Showcases & Dispensers" },
-  { id: 100, title: "Cold Showcase - Bend Glass", description: "Bend glass refrigerated showcase", image: productRefrigerator, category: "Showcases & Dispensers" },
-  { id: 101, title: "Cold Showcase - SS Bend", description: "Stainless steel bend showcase", image: productRefrigerator, category: "Showcases & Dispensers" },
-  { id: 102, title: "Cold Showcase - Flat Glass", description: "Modern flat glass cold showcase", image: productRefrigerator, category: "Showcases & Dispensers" },
-  { id: 103, title: "Cold Showcase - Panoramic", description: "Panoramic view cold display", image: productRefrigerator, category: "Showcases & Dispensers" },
-  { id: 104, title: "Vertical Showcase", description: "Vertical refrigerated display unit", image: productRefrigerator, category: "Showcases & Dispensers" },
-  { id: 105, title: "Table Top Hot Showcase", description: "Compact hot food display", image: productOven, category: "Showcases & Dispensers" },
-  { id: 106, title: "Table Top Cold Showcase", description: "Compact cold food display", image: productRefrigerator, category: "Showcases & Dispensers" },
-  { id: 107, title: "Slim Multi Deck Chiller", description: "Space-saving multi-deck chiller", image: productRefrigerator, category: "Showcases & Dispensers" },
-  { id: 108, title: "Hot Dispenser", description: "Hot beverage dispensing unit", image: productMixer, category: "Showcases & Dispensers" },
-  { id: 109, title: "Cold Dispenser", description: "Chilled beverage dispenser", image: productRefrigerator, category: "Showcases & Dispensers" },
-  { id: 110, title: "Drink Dispenser - Single Jar", description: "Single jar drink dispenser", image: productMixer, category: "Showcases & Dispensers" },
-  { id: 111, title: "Drink Dispenser - Double Jar", description: "Double jar drink dispenser", image: productMixer, category: "Showcases & Dispensers" },
-  { id: 112, title: "Slush Machine - Single Jar", description: "Single bowl slush machine", image: productMixer, category: "Showcases & Dispensers" },
-  { id: 113, title: "Slush Machine - Double Jar", description: "Double bowl slush machine", image: productMixer, category: "Showcases & Dispensers" },
-  { id: 114, title: "Soft Serve Ice Cream Machine", description: "Commercial soft serve machine", image: productMixer, category: "Showcases & Dispensers" },
-  { id: 115, title: "Softy Machine", description: "Soft ice cream making machine", image: productMixer, category: "Showcases & Dispensers" },
-  { id: 116, title: "Hot Chocolate Dispenser", description: "Hot chocolate dispensing machine", image: productMixer, category: "Showcases & Dispensers" },
-  { id: 117, title: "Chocolate Fountain", description: "Cascading chocolate fountain", image: productMixer, category: "Showcases & Dispensers" },
-
+  {
+    id: 4,
+    title: "Rice Boiler / Bulk Boiler",
+    description: "Large capacity rice and bulk cooking boiler",
+    category: "Canteen Equipment",
+    image: productOven
+  },
+  {
+    id: 5,
+    title: "Tilting Brat Pan Deluxe",
+    description: "Premium tilting brat pan for efficient cooking",
+    category: "Canteen Equipment",
+    image: productOven
+  },
+  {
+    id: 6,
+    title: "Tilting Brat Pan Standard",
+    description: "Standard tilting brat pan for commercial use",
+    category: "Canteen Equipment",
+    image: productOven
+  },
+  {
+    id: 7,
+    title: "Idly Plant - 240/300 Idlys",
+    description: "High capacity idly steaming plant",
+    category: "Canteen Equipment",
+    image: productOven
+  },
+  
+  // Tandoor
+  {
+    id: 8,
+    title: "Gas / Charcoal Tandoor",
+    description: "Versatile tandoor oven for gas or charcoal use",
+    category: "Tandoor",
+    image: productOven
+  },
+  
+  // Food Preparation Equipment & Juicers
+  {
+    id: 9,
+    title: "Potato Peeler",
+    description: "Commercial potato peeling machine",
+    category: "Food Preparation Equipment & Juicers",
+    image: productPrepTable
+  },
+  {
+    id: 10,
+    title: "Meat Mincer",
+    description: "Heavy-duty meat mincing machine",
+    category: "Food Preparation Equipment & Juicers",
+    image: productMixer
+  },
+  {
+    id: 11,
+    title: "Gravy Machine",
+    description: "Professional gravy making equipment",
+    category: "Food Preparation Equipment & Juicers",
+    image: productMixer
+  },
+  {
+    id: 12,
+    title: "Bone Saw",
+    description: "Commercial bone cutting saw",
+    category: "Food Preparation Equipment & Juicers",
+    image: productPrepTable
+  },
+  {
+    id: 13,
+    title: "Pulverizer Wet / Dry",
+    description: "Versatile wet and dry pulverizing machine",
+    category: "Food Preparation Equipment & Juicers",
+    image: productMixer
+  },
+  
+  // Food Service & Bain Marie
+  {
+    id: 14,
+    title: "Chef Counter",
+    description: "Professional chef preparation counter",
+    category: "Food Service & Bain Marie",
+    image: productPrepTable
+  },
+  {
+    id: 15,
+    title: "Bain Marie with 1 Bottom Shelf",
+    description: "Food warmer with single bottom shelf storage",
+    category: "Food Service & Bain Marie",
+    image: productPrepTable
+  },
+  {
+    id: 16,
+    title: "Bain Marie Display Counter",
+    description: "Display counter with bain marie food warmers",
+    category: "Food Service & Bain Marie",
+    image: productPrepTable
+  },
+  {
+    id: 17,
+    title: "Bain Marie with 3 Sided Cover, Sliding Door & Hot Case",
+    description: "Premium bain marie with full enclosure and hot case",
+    category: "Food Service & Bain Marie",
+    image: productPrepTable
+  },
+  
+  // Cake Showcases & Display Cabinets
+  {
+    id: 18,
+    title: "Bend Glass Showcase Super Deluxe",
+    description: "Premium curved glass display showcase",
+    category: "Cake Showcases & Display Cabinets",
+    image: productRefrigerator
+  },
+  {
+    id: 19,
+    title: "Flat Glass Cold Showcase",
+    description: "Refrigerated flat glass display cabinet",
+    category: "Cake Showcases & Display Cabinets",
+    image: productRefrigerator
+  },
+  {
+    id: 20,
+    title: "Showcase - Vertical",
+    description: "Vertical display showcase for bakery items",
+    category: "Cake Showcases & Display Cabinets",
+    image: productRefrigerator
+  },
+  
   // Professional Coffee Machines
-  { id: 118, title: "Espresso Machine - Single Group", description: "Single group espresso machine", image: productMixer, category: "Professional Coffee Machines" },
-  { id: 119, title: "Espresso Machine - Double Group", description: "Double group espresso machine", image: productMixer, category: "Professional Coffee Machines" },
-  { id: 120, title: "Espresso Machine - Triple Group", description: "Triple group espresso machine", image: productMixer, category: "Professional Coffee Machines" },
-  { id: 121, title: "Coffee Vending Machine", description: "Automated coffee vending machine", image: productMixer, category: "Professional Coffee Machines" },
-  { id: 122, title: "Bean-to-Cup Machine", description: "Automatic bean-to-cup coffee maker", image: productMixer, category: "Professional Coffee Machines" },
-  { id: 123, title: "Capsule Coffee Machine LB 1100", description: "Capsule-based coffee system", image: productMixer, category: "Professional Coffee Machines" },
-  { id: 124, title: "Coffee Grinder", description: "Professional coffee grinding machine", image: productMixer, category: "Professional Coffee Machines" },
-  { id: 125, title: "Coffee Doser", description: "Precision coffee dosing machine", image: productMixer, category: "Professional Coffee Machines" },
-
-  // Refrigeration Equipment
-  { id: 126, title: "Undercounter - 2 Door", description: "2-door undercounter refrigerator", image: productRefrigerator, category: "Refrigeration Equipment" },
-  { id: 127, title: "Undercounter - 3 Door", description: "3-door undercounter refrigerator", image: productRefrigerator, category: "Refrigeration Equipment" },
-  { id: 128, title: "Reach-In Refrigerator - 2 Door", description: "2-door reach-in commercial refrigerator", image: productRefrigerator, category: "Refrigeration Equipment" },
-  { id: 129, title: "Reach-In Refrigerator - 4 Door", description: "4-door reach-in commercial refrigerator", image: productRefrigerator, category: "Refrigeration Equipment" },
-  { id: 130, title: "Reach-In Combi", description: "Combination reach-in unit", image: productRefrigerator, category: "Refrigeration Equipment" },
-  { id: 131, title: "Sandwich Counter", description: "Refrigerated sandwich prep counter", image: productPrepTable, category: "Refrigeration Equipment" },
-  { id: 132, title: "Preparation Counter", description: "Refrigerated food prep counter", image: productPrepTable, category: "Refrigeration Equipment" },
-  { id: 133, title: "Salad Counter", description: "Refrigerated salad preparation counter", image: productPrepTable, category: "Refrigeration Equipment" },
-  { id: 134, title: "Sushi Counter", description: "Specialized sushi preparation counter", image: productPrepTable, category: "Refrigeration Equipment" },
-  { id: 135, title: "Chest Freezer - Hard Top", description: "Hard top chest freezer", image: productRefrigerator, category: "Refrigeration Equipment" },
-  { id: 136, title: "Chest Freezer - Curve Glass", description: "Curved glass top chest freezer", image: productRefrigerator, category: "Refrigeration Equipment" },
-  { id: 137, title: "Visi Cooler - Single Door", description: "Single door glass display cooler", image: productRefrigerator, category: "Refrigeration Equipment" },
-  { id: 138, title: "Visi Cooler - Double Door", description: "Double door glass display cooler", image: productRefrigerator, category: "Refrigeration Equipment" },
-  { id: 139, title: "Blast Chiller", description: "Rapid cooling blast chiller", image: productRefrigerator, category: "Refrigeration Equipment" },
-  { id: 140, title: "Ice Cream Parlour Unit", description: "Professional ice cream display unit", image: productRefrigerator, category: "Refrigeration Equipment" },
-  { id: 141, title: "Cold Room", description: "Walk-in cold storage room", image: productRefrigerator, category: "Refrigeration Equipment" },
-
-  // Bar Refrigeration
-  { id: 142, title: "Back Bar Cooler - 2 Door", description: "2-door back bar refrigerator", image: productRefrigerator, category: "Bar Refrigeration" },
-  { id: 143, title: "Back Bar Cooler - 3 Door", description: "3-door back bar refrigerator", image: productRefrigerator, category: "Bar Refrigeration" },
-  { id: 144, title: "Under Counter Glass Door Fridge", description: "Glass door undercounter unit", image: productRefrigerator, category: "Bar Refrigeration" },
-  { id: 145, title: "Wine Chiller", description: "Temperature-controlled wine chiller", image: productRefrigerator, category: "Bar Refrigeration" },
-  { id: 146, title: "Glass Froster", description: "Glass frosting refrigeration unit", image: productRefrigerator, category: "Bar Refrigeration" },
-  { id: 147, title: "Minibar - Solid Door", description: "Solid door minibar refrigerator", image: productRefrigerator, category: "Bar Refrigeration" },
-  { id: 148, title: "Minibar - Glass Door", description: "Glass door minibar refrigerator", image: productRefrigerator, category: "Bar Refrigeration" },
-  { id: 149, title: "Beer Dispenser", description: "Draft beer dispensing system", image: productRefrigerator, category: "Bar Refrigeration" },
-  { id: 150, title: "Mocktail / Cocktail Station", description: "Professional cocktail preparation station", image: productPrepTable, category: "Bar Refrigeration" },
-
-  // Ice Makers & Flakers
-  { id: 151, title: "Mini Ice Machine", description: "Compact ice making machine", image: productRefrigerator, category: "Ice Makers & Flakers" },
-  { id: 152, title: "Ice Machine - Cuber", description: "Commercial cube ice maker", image: productRefrigerator, category: "Ice Makers & Flakers" },
-  { id: 153, title: "Ice Crusher", description: "Heavy-duty ice crushing machine", image: productMixer, category: "Ice Makers & Flakers" },
-
-  // Catering & Countertop Equipment
-  { id: 154, title: "Sandwich Griller - Standard", description: "Standard commercial sandwich griller", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 155, title: "Sandwich Griller - Imported", description: "Premium imported sandwich griller", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 156, title: "Commercial Toaster", description: "High-volume commercial toaster", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 157, title: "Pop-Up Toaster", description: "Automatic pop-up toaster", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 158, title: "Conveyor Toaster", description: "Continuous conveyor toasting machine", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 159, title: "Salamander Grill", description: "Professional overhead salamander grill", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 160, title: "Idly Steamer", description: "Traditional idly steaming unit", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 161, title: "Corn Steamer", description: "Commercial corn steaming machine", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 162, title: "Hot Plate", description: "Commercial hot plate cooktop", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 163, title: "Waffle Maker", description: "Commercial waffle making machine", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 164, title: "Cone Baker", description: "Ice cream cone baking machine", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 165, title: "Crepe Machine", description: "Professional crepe making machine", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 166, title: "Shawarma Grill - Electric", description: "Electric shawarma grilling machine", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 167, title: "Shawarma Grill - Gas", description: "Gas-powered shawarma grill", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 168, title: "Hot Dog Roller", description: "Rolling hot dog cooking machine", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 169, title: "Popcorn Maker with Warmer", description: "Popcorn machine with warming unit", image: productMixer, category: "Catering & Countertop Equipment" },
-  { id: 170, title: "Popcorn Cart", description: "Mobile popcorn serving cart", image: productMixer, category: "Catering & Countertop Equipment" },
-  { id: 171, title: "Chicken Rotisserie", description: "Rotating chicken roasting machine", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 172, title: "Warming Showcase", description: "Hot food warming display", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 173, title: "Hot Case", description: "Heated food display case", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 174, title: "Beverage Dispenser", description: "Multi-beverage dispensing unit", image: productMixer, category: "Catering & Countertop Equipment" },
-  { id: 175, title: "Water Boiler", description: "Commercial water boiling unit", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 176, title: "Milk Urn", description: "Heated milk storage urn", image: productOven, category: "Catering & Countertop Equipment" },
-  { id: 177, title: "Soup Station", description: "Multi-compartment soup warmer", image: productOven, category: "Catering & Countertop Equipment" },
-
-  // Washing & Utility
-  { id: 178, title: "Domestic Dishwasher", description: "Home-style dishwasher for small operations", image: productDishwasher, category: "Washing & Utility" },
-  { id: 179, title: "Under Counter Dishwasher", description: "Compact under counter dishwashing unit", image: productDishwasher, category: "Washing & Utility" },
-  { id: 180, title: "Hood Type Dishwasher", description: "Heavy-duty hood type dishwasher", image: productDishwasher, category: "Washing & Utility" },
-  { id: 181, title: "Glass Washer", description: "Specialized glass washing machine", image: productDishwasher, category: "Washing & Utility" },
-  { id: 182, title: "Rack Conveyor Dishwasher", description: "Continuous rack conveyor dishwasher", image: productDishwasher, category: "Washing & Utility" },
-  { id: 183, title: "Utensil Washer", description: "Heavy-duty utensil washing machine", image: productDishwasher, category: "Washing & Utility" },
-  { id: 184, title: "Washer Extractor", description: "Commercial washing machine", image: productDishwasher, category: "Washing & Utility" },
-  { id: 185, title: "Dryer", description: "Industrial clothes drying machine", image: productDishwasher, category: "Washing & Utility" },
-  { id: 186, title: "Ironer", description: "Commercial ironing machine", image: productDishwasher, category: "Washing & Utility" },
-  { id: 187, title: "Single Sink", description: "Stainless steel single compartment sink", image: productPrepTable, category: "Washing & Utility" },
-  { id: 188, title: "Double Sink", description: "Stainless steel double compartment sink", image: productPrepTable, category: "Washing & Utility" },
-  { id: 189, title: "Triple Sink", description: "Stainless steel triple compartment sink", image: productPrepTable, category: "Washing & Utility" },
-  { id: 190, title: "Pot Wash Sink", description: "Heavy-duty pot washing sink", image: productPrepTable, category: "Washing & Utility" },
-  { id: 191, title: "Soiled Dish Landing Table", description: "Landing table for dirty dishes", image: productPrepTable, category: "Washing & Utility" },
-  { id: 192, title: "Chopping Board Sterilizer", description: "UV chopping board sterilization unit", image: productPrepTable, category: "Washing & Utility" },
-  { id: 193, title: "Knife Sterilizer", description: "UV knife sterilization cabinet", image: productPrepTable, category: "Washing & Utility" },
-
-  // Tables, Cabinets & Racks
-  { id: 194, title: "Work Table with Shelves", description: "SS work table with storage shelves", image: productPrepTable, category: "Tables, Cabinets & Racks" },
-  { id: 195, title: "Work Table with Sink", description: "Integrated sink work table", image: productPrepTable, category: "Tables, Cabinets & Racks" },
-  { id: 196, title: "Worktop Cabinet", description: "Under-counter worktop storage cabinet", image: productPrepTable, category: "Tables, Cabinets & Racks" },
-  { id: 197, title: "Wall Cabinet", description: "Wall-mounted storage cabinet", image: productPrepTable, category: "Tables, Cabinets & Racks" },
-  { id: 198, title: "Dish Rack", description: "Stainless steel dish drying rack", image: productPrepTable, category: "Tables, Cabinets & Racks" },
-  { id: 199, title: "Glass Rack", description: "Specialized glass storage rack", image: productPrepTable, category: "Tables, Cabinets & Racks" },
-  { id: 200, title: "Pot Rack", description: "Heavy-duty pot storage rack", image: productPrepTable, category: "Tables, Cabinets & Racks" },
-  { id: 201, title: "Dining Table", description: "Commercial dining table", image: productPrepTable, category: "Tables, Cabinets & Racks" },
-
-  // Trolleys & Carts
-  { id: 202, title: "Utility Service Trolley", description: "Multi-purpose service trolley", image: productPrepTable, category: "Trolleys & Carts" },
-  { id: 203, title: "Hot Food Trolley", description: "Insulated hot food transport trolley", image: productPrepTable, category: "Trolleys & Carts" },
-  { id: 204, title: "Room Service Trolley", description: "Hotel room service trolley", image: productPrepTable, category: "Trolleys & Carts" },
-  { id: 205, title: "Tea Trolley", description: "Mobile tea service trolley", image: productPrepTable, category: "Trolleys & Carts" },
-  { id: 206, title: "Housekeeping Trolley", description: "Hotel housekeeping cart", image: productPrepTable, category: "Trolleys & Carts" },
-  { id: 207, title: "Laundry Trolley", description: "Commercial laundry transport trolley", image: productPrepTable, category: "Trolleys & Carts" },
-  { id: 208, title: "Platform Truck", description: "Heavy-duty platform transport truck", image: productPrepTable, category: "Trolleys & Carts" },
-  { id: 209, title: "Pallet Truck", description: "Manual pallet lifting truck", image: productPrepTable, category: "Trolleys & Carts" },
-
-  // Exhaust & Gas Systems
-  { id: 210, title: "Exhaust Hood - Standard", description: "Standard commercial exhaust hood", image: productOven, category: "Exhaust & Gas Systems" },
-  { id: 211, title: "Exhaust Hood - Combi", description: "Combination exhaust hood system", image: productOven, category: "Exhaust & Gas Systems" },
-  { id: 212, title: "Centrifugal Blower", description: "High-capacity centrifugal exhaust blower", image: productMixer, category: "Exhaust & Gas Systems" },
-  { id: 213, title: "Axial Flow Fan", description: "Axial flow exhaust fan", image: productMixer, category: "Exhaust & Gas Systems" },
-  { id: 214, title: "Fresh Air System", description: "Fresh air intake and filtration system", image: productMixer, category: "Exhaust & Gas Systems" },
-  { id: 215, title: "Cooling System", description: "Commercial kitchen cooling system", image: productRefrigerator, category: "Exhaust & Gas Systems" },
-  { id: 216, title: "Gas Bank Manifold", description: "Centralized gas distribution manifold system", image: productOven, category: "Exhaust & Gas Systems" },
+  {
+    id: 21,
+    title: "Coffee Machine La Cimbali",
+    description: "Premium La Cimbali espresso machine",
+    category: "Professional Coffee Machines",
+    image: productMixer
+  },
+  
+  // Professional Refrigeration Equipment
+  {
+    id: 22,
+    title: "Undercounter 2 Door",
+    description: "Two-door undercounter refrigeration unit",
+    category: "Professional Refrigeration Equipment",
+    image: productRefrigerator
+  },
+  {
+    id: 23,
+    title: "Undercounter 3 Door",
+    description: "Three-door undercounter refrigeration unit",
+    category: "Professional Refrigeration Equipment",
+    image: productRefrigerator
+  },
+  {
+    id: 24,
+    title: "Sandwich Counter",
+    description: "Refrigerated sandwich preparation counter",
+    category: "Professional Refrigeration Equipment",
+    image: productRefrigerator
+  },
+  {
+    id: 25,
+    title: "Chest Freezer - Curve Glass",
+    description: "Curved glass top chest freezer",
+    category: "Professional Refrigeration Equipment",
+    image: productRefrigerator
+  },
+  {
+    id: 26,
+    title: "Blast Chiller",
+    description: "Rapid cooling blast chiller unit",
+    category: "Professional Refrigeration Equipment",
+    image: productRefrigerator
+  },
+  {
+    id: 27,
+    title: "4 Door Reach In",
+    description: "Four-door reach-in refrigerator",
+    category: "Professional Refrigeration Equipment",
+    image: productRefrigerator
+  },
+  {
+    id: 28,
+    title: "Combi Reach In",
+    description: "Combination fridge-freezer reach-in unit",
+    category: "Professional Refrigeration Equipment",
+    image: productRefrigerator
+  },
+  {
+    id: 29,
+    title: "Visi Cooler",
+    description: "Glass door beverage cooler",
+    category: "Professional Refrigeration Equipment",
+    image: productRefrigerator
+  },
+  {
+    id: 30,
+    title: "Cold Room",
+    description: "Walk-in cold storage room",
+    category: "Professional Refrigeration Equipment",
+    image: productRefrigerator
+  },
+  
+  // Catering Equipment
+  {
+    id: 31,
+    title: "Deep Fat Fryer - Single",
+    description: "Single basket deep fat fryer",
+    category: "Catering Equipment",
+    image: productFryer
+  },
+  {
+    id: 32,
+    title: "Commercial Toaster",
+    description: "High-capacity commercial toaster",
+    category: "Catering Equipment",
+    image: productOven
+  },
+  {
+    id: 33,
+    title: "Idly Steamer",
+    description: "Commercial idly steaming equipment",
+    category: "Catering Equipment",
+    image: productOven
+  },
+  {
+    id: 34,
+    title: "Waffle Maker",
+    description: "Professional waffle making machine",
+    category: "Catering Equipment",
+    image: productOven
+  },
+  {
+    id: 35,
+    title: "Corn Steamer",
+    description: "Commercial corn steaming unit",
+    category: "Catering Equipment",
+    image: productOven
+  },
+  {
+    id: 36,
+    title: "Hot Plate",
+    description: "Commercial hot plate for cooking",
+    category: "Catering Equipment",
+    image: productOven
+  },
+  {
+    id: 37,
+    title: "Shawarma Grill Gas",
+    description: "Gas-powered vertical shawarma grill",
+    category: "Catering Equipment",
+    image: productOven
+  },
+  {
+    id: 38,
+    title: "Salamander",
+    description: "Commercial salamander broiler",
+    category: "Catering Equipment",
+    image: productOven
+  },
+  {
+    id: 39,
+    title: "Soup Station",
+    description: "Commercial soup warming station",
+    category: "Catering Equipment",
+    image: productMixer
+  },
+  
+  // Dishwasher Laundry & Extractor
+  {
+    id: 40,
+    title: "Dishwasher",
+    description: "Commercial dishwashing machine",
+    category: "Dishwasher Laundry & Extractor",
+    image: productDishwasher
+  },
+  {
+    id: 41,
+    title: "Glass Washer",
+    description: "Specialized glass washing machine",
+    category: "Dishwasher Laundry & Extractor",
+    image: productDishwasher
+  },
+  {
+    id: 42,
+    title: "Under Counter Dishwasher",
+    description: "Compact under-counter dishwasher",
+    category: "Dishwasher Laundry & Extractor",
+    image: productDishwasher
+  },
+  {
+    id: 43,
+    title: "Hood Type Dishwasher",
+    description: "Hood-style commercial dishwasher",
+    category: "Dishwasher Laundry & Extractor",
+    image: productDishwasher
+  },
+  {
+    id: 44,
+    title: "Jet Spray",
+    description: "High-pressure jet spray cleaning system",
+    category: "Dishwasher Laundry & Extractor",
+    image: productDishwasher
+  },
+  {
+    id: 45,
+    title: "Washer Extractor & Dryer",
+    description: "Commercial washing and drying machine",
+    category: "Dishwasher Laundry & Extractor",
+    image: productDishwasher
+  },
+  {
+    id: 46,
+    title: "Rack Conveyor",
+    description: "Conveyor system for dish racks",
+    category: "Dishwasher Laundry & Extractor",
+    image: productDishwasher
+  },
+  
+  // Washing Equipment
+  {
+    id: 47,
+    title: "Soiled Dish Landing Table",
+    description: "Pre-wash dish landing table",
+    category: "Washing Equipment",
+    image: productPrepTable
+  },
+  {
+    id: 48,
+    title: "Single Sink",
+    description: "Single compartment washing sink",
+    category: "Washing Equipment",
+    image: productPrepTable
+  },
+  {
+    id: 49,
+    title: "Double Unit Sink",
+    description: "Two-compartment washing sink",
+    category: "Washing Equipment",
+    image: productPrepTable
+  },
+  {
+    id: 50,
+    title: "Double Sink with Drain Board",
+    description: "Double sink with integrated draining board",
+    category: "Washing Equipment",
+    image: productPrepTable
+  },
+  {
+    id: 51,
+    title: "Triple Unit Sink",
+    description: "Three-compartment washing sink",
+    category: "Washing Equipment",
+    image: productPrepTable
+  }
 ];
